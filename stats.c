@@ -9,10 +9,12 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
- *
- * <Add Extended Description Here>
+ * @file Stats.c
+ * @brief This code is used to get some statistics of giiven array of unsigned char like: its max,
+ *        min,mean, and median.it also used to print all the elements of that array and sort it. 
+ * 
+ * This file is included as a part of assement in Embedded systems software development Course
+ * at Coursera.
  *
  * @author Mo'men Hesham
  * @date 20/6/2020
@@ -23,7 +25,7 @@
 
 #include <stdio.h>
 #include "stats.h"
-
+#include <stdlib.h>
 /* Size of the Data Set */
 #define SIZE (40)
 
@@ -34,10 +36,48 @@ void main() {
                               200, 122, 150, 90,   92,  87, 177, 244,
                               201,   6,  12,  60,   8,   2,   5,  67,
                                 7,  87, 250, 230,  99,   3, 100,  90};
-
-  /* Other Variable Declarations Go Here */
-  /* Statistics and Printing Functions Go Here */
+	print_statistics(test,40);
+	sort_array(test,40);
+	print_array(test,40);
+		
 
 }
 
-/* Add other Implementation File Code Here */
+
+
+void print_array(unsigned char ptr[],int length)
+{
+
+}
+
+unsigned char find_mean(unsigned char ptr[],int length)
+{
+
+}
+
+unsigned char find_median(unsigned char ptr[],int length)
+{
+
+}
+
+
+unsigned char find_maximum(unsigned char ptr[],int length)
+{
+
+}
+
+unsigned char find_minimum(unsigned char ptr[],int length)
+{
+
+}
+
+void print_statistics(unsigned char ptr[],int length)
+{
+
+}
+
+void sort_array(unsigned char ptr[],int length)
+{
+
+}
+
